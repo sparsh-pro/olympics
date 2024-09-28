@@ -1,0 +1,263 @@
+/* Custom Styles */
+/* General Styles */
+body {
+    background-color: #0179f0; /* Light background color */
+    font-family: 'Arial', sans-serif; /* Font family */
+    margin: 0;
+    padding: 0;
+}
+.card-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+  }
+  .card {
+    min-width: 400px;
+    max-width: 401px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Smooth transition for the hover effect */
+  }
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+  }
+  .arrow-button {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .arrow-button:hover {
+    color: red;
+    transform: scale(1.2);
+  }
+  /* Popup Styles */
+/* Header Styles */
+header {
+    padding: 10px 0;
+    background-color: #fbf70be8; /* Light yellow background for header */
+}
+
+/* Olympic Logo */
+.logo img {
+    height: 40px; /* Smaller logo size */
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 0.5rem 1rem; /* Padding for navbar */
+    background-color: #18e5f0; /* Dark background for navbar */
+}
+.aboutus 
+
+.navbar-nav {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center items */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Space between list items */
+    position: relative; /* For positioning the border */
+}
+
+.navbar-nav .nav-link {
+    color: rgb(3, 224, 254); /* Navbar text color */
+    transition: color 0.3s; /* Transition for color change */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 2px; /* Rounded corners for links */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00; /* Change text color on hover */
+    background-color: #04e1f5f1; /* Highlight background on hover */
+}
+
+/* Section Titles */
+h2 {
+    color: #4af01c; /* Color for section titles */
+    margin-bottom: 30px; /* Margin below titles */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(4, 187, 248); /* Text color for hero section */
+    text-align: center;
+}
+
+/* Call to Action Buttons */
+.cta-buttons .btn {
+    margin: 10px; /* Margin between buttons */
+}
+
+/* Medal Ticker */
+.medal-ticker {
+    background-color: #007bff; /* Background color for medal ticker */
+    color: white; /* Text color for medal ticker */
+    padding: 10px; /* Padding for medal ticker */
+}
+
+/* Athlete Cards */
+.athlete-card {
+    border: 1px solid #ddd; /* Border for athlete cards */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Maintain shape */
+    transition: transform 0.3s; /* Animation for hover */
+    margin: 10px; /* Margin for cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.athlete-card:hover {
+    transform: scale(1.05); /* Scale on hover */
+}
+
+.athlete-card img {
+    width: 60%; /* Make images full width */
+    height: 60%; /* Maintain aspect ratio */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Font size for card titles */
+}
+
+.card-text {
+    font-size: 1rem; /* Font size for card text */
+}
+
+/* Upcoming Events */
+.upcoming-events .card {
+    box-shadow: 0 2px 10px rgba(125, 164, 227, 0.904); /* Shadow for event cards */
+}
+
+/* Highlights */
+.highlights video {
+    border: 2px solid #ddd; /* Border around videos */
+    border-radius: 10px; /* Rounded corners for videos */
+}
+
+/* Contact Form */
+.form-label {
+    font-weight: bold; /* Bold labels */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for input fields */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none; /* No border */
+    transition: background-color 0.3s; /* Button hover transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5fda9d; /* Dark footer background */
+    color: white; /* Footer text color */
+    text-align: center; /* Center text */
+    padding: 15px 0; /* Footer padding */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Margin for cards in smaller screens */
+    }
+}
+
+/* Center Aligning All Text */
+.container {
+    text-align: center; /* Center text alignment for all containers */
+}
+
+/* List Items (li) Styles */
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Space between list items */
+    border-top: 2px solid transparent; /* Top border */
+    background-color: #62e0f1; /* Light cyan background for list items */
+    color: #29e677; /* Matching text color */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar-nav .nav-item:hover {
+    border-top: 2px solid #ffcc00; /* Change border color on hover */
+    background-color: #b2ebf2; /* Slightly darker cyan on hover */
+    color: #004d40; /* Darker matching text color on hover */
+}
+
+/* Hero Buttons Styling */
+.btn-primary, .btn-secondary {
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Rounded button corners */
+}
+
+.btn-secondary {
+    background-color: #2076c2c6; /* Secondary button color */
+}
+
+.btn-secondary:hover {
+    background-color: #1c86d7; /* Darker gray on hover */
+}
+
+/* Sidebar Navigation Styles */
+.sidebar {
+    position: fixed; /* Fixed position */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    width: 200px; /* Width of the sidebar */
+    height: 100%; /* Full height */
+    background-color: #317ecb; /* Background color */
+    border-right: 2px solid #ffcc00; /* Right border */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(51, 230, 72, 0.5); /* Shadow effect */
+}
+
+.sidebar-nav {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.sidebar-nav li {
+    margin: 15px 0; /* Space between items */
+    border: 2px solid transparent; /* Transparent border for hover effect */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #e0f7fa; /* Light cyan background for sidebar items */
+    color: #006064; /* Matching text color */
+}
+
+.sidebar-nav li:hover {
+    border-color: #ffcc00; /* Change border color on hover */
+    background-color: #b2ebf2; /* Slightly darker cyan on hover */
+    color: #004d40; /* Darker matching text color on hover */
+}
+
+.sidebar-nav a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the list item's color */
+    display: block; /* Block display for full clickable area */
+    padding: 10px; /* Padding for links */
+    transition: background-color 0.3s; /* Transition for hover */
+}
+
+.sidebar-nav a:hover {
+    background-color: rgba(255, 204, 0, 0.2); /* Highlight background on hover */
+}

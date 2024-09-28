@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Olympics - Home</title>
+    <!-- Bootstrap and Stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional custom styles */
+        body {
+            font-family: 'Open Sans', sans-serif; /* Set a default font for the entire website */
+        }
+        .logo img {
+            width: 50px; /* Adjust the size of the logo */
+            height: 50px;
+            border-radius: 50%; /* Add a circular border to the logo */
+        }
+        footer {
+            position: relative; /* Keeps the footer relative to the bottom */
+            bottom: 0;
+            width: 100%;
+            background-color: #333; /* Dark background for the footer */
+            color: #fff; /* White text color for the footer */
+            padding: 20px; /* Add some padding to the footer */
+        }
+        .footer-link {
+            text-decoration: underline; /* Underline the 'About Us' link */
+            color: #fff; /* White text color for the link */
+        }
+        .about-us {
+            background-color: #9dc0e3; /* Light background for About Us section */
+            padding: 30px;
+            border-radius: 5px;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+        .navbar {
+            background-color: #3498db; /* Nice blue color for the navbar */
+            padding: 10px; /* Add some padding to the navbar */
+        }
+        .hero {
+            background-image: url('background-image.jpg'); /* Add a background image to the hero section */
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* Make the hero section full height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-content {
+            text-align: center;
+            color: #fff; /* White text color for the hero content */
+        }
+        .cta-buttons {
+            margin-top: 20px; /* Add some margin to the CTA buttons */
+        }
+        .cta-buttons a {
+            margin: 10px; /* Add some margin to the CTA buttons */
+            border-radius: 5px; /* Add a subtle border radius to the CTA buttons */
+        }
+        /* Add a slider of pictures */
+        .slider {
+            width: 100%;
+            height: 500px;
+            margin: 40px auto;
+            position: relative;
+        }
+        .slider img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .slider .prev, .slider .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .slider .prev {
+            left: 20px;
+        }
+        .slider .next {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <body style="background-image: url('olympic.jpeg');"></body>
+    <header class="container-fluid bg-dark text-black">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html"><img src="paris olympic logo.jpeg" alt="Olympic Logo"></a>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="athletes.html">Athletes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="medals.html">Medal Count</a></li>
+                    <li class="nav-item"><a class="nav-link" href="highlights.html">Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero bg-light text-dark py-5">
+        <section style="background-image: url('');"></body>
+
+        <div class=" container">
+            <div class="hero-content text-center">
+                <h1>Welcome to the 2024 Olympics</h1>
+                <p class="lead">Celebrating Unity in Diversity – Explore the Games and Stay Updated!</p>
+                <div class="cta-buttons">
+                    <a href="schedule.html" class="btn btn-primary">Explore the Games</a>
+                    <a href="#watch-live" class="btn btn-secondary">Watch Live</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">OLYMPIC VENUES</h2>
+          <div class="card-container mt-8" id="venues-container">
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Tokyo Olympic Stadium"
+              data-description="Located in Shinjuku, this stadium is the centerpiece of the Tokyo 2020 Games, hosting the opening and closing ceremonies as well as the athletics events. It has a seating capacity of 68,000 and features a striking design that combines modern architecture with traditional Japanese elements."
+            >
+              <img
+                alt="Tokyo Olympic Stadium"
+                class="w-full h-48 object-cover"
+                src="download.jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Tokyo Olympic Stadium</h3>
+                <p class="mt-2 text-gray-600">
+                  Where history meets innovation—Tokyo's Olympic heart beats here!
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Ariake Arena"
+              data-description="Situated in the Ariake area, this arena hosted volleyball and wheelchair rugby during the Tokyo 2020 Olympics. It has a capacity of 15,000 spectators and is designed for multiple sports, showcasing a sustainable and flexible venue concept."
+            >
+              <img
+                alt="Ariake Arena"
+                class="w-full h-48 object-cover"
+                src="download (1).jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Ariake Arena</h3>
+                <p class="mt-2 text-gray-600">
+                  A venue that plays as hard as the athletes—Ariake Arena, where
+                  sports unite!
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Odaiba Marine Park"
+              data-description="Located in the Odaiba district, this scenic venue hosted the surfing events during the Tokyo 2020 Olympics. The park offers beautiful views of Tokyo Bay and is known for its sandy beaches, making it a popular spot for both athletes and spectators."
+            >
+              <img
+                alt="Odaiba Marine Park"
+                class="w-full h-48 object-cover"
+                src="download (2).jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Odaiba Marine Park</h3>
+                <p class="mt-2 text-gray-600">
+                  Ride the waves of excitement at Odaiba—where sport meets
+                  serenity!
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Saitama Super Arena"
+              data-description="Located in Saitama City, this arena hosted basketball events. With a capacity of up to 37,000, it is known for its versatility and has been used for various events, including concerts and sports, making it a significant venue in Japan."
+            >
+              <img
+                alt="Saitama Super Arena"
+                class="w-full h-48 object-cover"
+                src="download (3).jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Saitama Super Arena</h3>
+                <p class="mt-2 text-gray-600">
+                  A super stage for super athletes—Saitama Arena shines bright!
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Stade de France "
+              data-description="This iconic stadium, located just north of Paris, will host the opening and closing ceremonies of the Paris 2024 Olympics. With a capacity of 80,000, it is France's largest stadium and has hosted numerous major sporting events, including the FIFA World Cup and UEFA European Championship."
+            >
+              <img
+                alt="Stade de France "
+                class="w-full h-48 object-cover"
+                src="download (4).jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Stade de France</h3>
+                <p class="mt-2 text-gray-600">
+                  A grand spectacle awaits at Stade de France—where legends are
+                  born!
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Place de la Concorde"
+              data-description="This historic square will be transformed into a unique venue for the Olympic triathlon and open water swimming events. Its stunning backdrop includes the iconic obelisk and fountains, providing a picturesque setting in the heart of Paris."
+            >
+              <img
+                alt="Place de la Concorde"
+                class="w-full h-48 object-cover"
+                src="download (5).jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Place de la Concorde</h3>
+                <p class="mt-2 text-gray-600">
+                  A race through history—Place de la Concorde sets the stage for
+                  glory!
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Bercy Arena"
+              data-description="TKnown for hosting indoor sports, this arena will be the venue for badminton and rhythmic gymnastics during the Paris 2024 Games. With a capacity of around 20,000, it is located in the Bercy district and is renowned for its excellent acoustics and modern design."
+            >
+              <img
+                alt="Bercy Arena"
+                class="w-full h-48 object-cover"
+                src="download (6).jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Bercy Arena</h3>
+                <p class="mt-2 text-gray-600">
+                  Where grace meets competition—Bercy Arena dances to the rhythm
+                  of the Games!
+                </p>
+              </div>
+            </div>
+            <div
+              class="card bg-white shadow-lg rounded-lg overflow-hidden"
+              data-title="Champ de Mars "
+              data-description="Situated near the Eiffel Tower, this iconic park will host the rugby events during the Paris 2024 Olympics. It offers stunning views of the tower and serves as a symbolic location for the Games, highlighting the beauty of Paris."
+            >
+              <img
+                alt="Champ de Mars"
+                class="w-full h-48 object-cover"
+                src="download (7).jpeg"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold">Champ de Mars</h3>
+                <p class="mt-2 text-gray-600">
+                  Feel the pulse of rugby at Champ de Mars—where dreams tower
+                  high!
+                </p>
+              </div>
+            </div>
+  
+            <!-- Add more cards as needed -->
+          </div>
+          <div class="mt-8">
+            <button
+              class="arrow-button"
+              id="prev-venues"
+              aria-label="Previous Venues"
+            >
+              <i class="fas fa-chevron-left fa-2x"></i>
+            </button>
+            <button
+              class="arrow-button"
+              id="next-venues"
+              aria-label="Next Venues"
+            >
+              <i class="fas fa-chevron-right fa-2x"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    <section class="about-us container">
+        <div class="hero-content text-center">
+            <h2>About Us</h2>
+        </div>
+        <p >The Paris 2024 Olympics will unite athletes from every corner of the world in a celebration of sporting excellence. Our mission goes beyond competition; it’s about fostering unity, peace, and friendship through the power of sports. The Olympics embody the very spirit of humanity, bringing out the best in people.</p>
+        <p>With a legacy spanning more than a century, the Games showcase elite athletes who chase greatness with unwavering determination. Our goal for the 2024 Olympics is not just to inspire, but to create a lasting legacy that positively impacts communities and the planet. Join us on this thrilling journey as we witness how sports can truly transform the world.</p>
+    </section>
+
+    <footer class="container-fluid bg-dark text-white py-3 mt-auto">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Olympics. All rights reserved.</p>
+            <a href="#" class="footer-link">About Us</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
